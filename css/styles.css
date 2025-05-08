@@ -568,11 +568,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: calc(100% - 4px);
+    max-width: calc(100% - 14px);
     box-sizing: border-box;
-    padding: 0 13px;
+    padding: 0 8px;
     margin: 0 auto;
-    width: calc(100% - 4px);
+    width: calc(100% - 14px);
 }
 
 .footer-links {
@@ -717,12 +717,12 @@ footer {
     }
     
     .footer-links {
-        gap: 2px;
+        gap: 1px;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: calc(100% - 4px);
+        max-width: calc(100% - 14px);
         padding: 0;
-        width: calc(100% - 4px);
+        width: calc(100% - 14px);
     }
     
     .footer-links a {
@@ -751,8 +751,8 @@ footer {
     
     .footer-content {
         padding: 0;
-        max-width: calc(100% - 4px);
-        width: calc(100% - 4px);
+        max-width: calc(100% - 14px);
+        width: calc(100% - 14px);
         margin: 0 auto;
     }
     
