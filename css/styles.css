@@ -717,17 +717,19 @@ footer {
     }
     
     .footer-links {
-        gap: 6px;
+        gap: 2px;
         flex-wrap: wrap;
         justify-content: center;
         max-width: 100%;
+        padding: 0 2px;
     }
     
     .footer-links a {
-        font-size: 0.8rem;
-        padding: 2px 3px;
+        font-size: 0.75rem;
+        padding: 1px 2px;
         word-break: keep-all;
         white-space: nowrap;
+        margin: 0;
     }
 }
 
@@ -747,14 +749,17 @@ footer {
     }
     
     .footer-content {
-        padding: 0 3px;
+        padding: 0 2px;
     }
     
     .footer-links {
-        gap: 3px;
+        gap: 1px;
         width: 100%;
         flex-wrap: wrap;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        justify-items: center;
     }
     
     .footer-links a {
