@@ -568,11 +568,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: calc(100% - 14px);
+    max-width: calc(100% - 6px);
     box-sizing: border-box;
-    padding: 0 8px;
+    padding: 0 12px;
     margin: 0 auto;
-    width: calc(100% - 14px);
+    width: calc(100% - 6px);
 }
 
 .footer-links {
@@ -720,9 +720,9 @@ footer {
         gap: 1px;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: calc(100% - 14px);
+        max-width: calc(100% - 6px);
         padding: 0;
-        width: calc(100% - 14px);
+        width: calc(100% - 6px);
     }
     
     .footer-links a {
@@ -751,8 +751,8 @@ footer {
     
     .footer-content {
         padding: 0;
-        max-width: calc(100% - 14px);
-        width: calc(100% - 14px);
+        max-width: calc(100% - 6px);
+        width: calc(100% - 6px);
         margin: 0 auto;
     }
     
