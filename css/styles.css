@@ -558,7 +558,7 @@ nav {
 footer {
     background-color: var(--light-color);
     color: var(--dark-color);
-    padding: 20px 0;
+    padding: 30px 0;
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -586,8 +586,8 @@ footer {
 .footer-links a {
     color: var(--gray-color);
     font-weight: 600;
-    font-size: 0.9rem;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 6px;
 }
 
 .footer-links a:hover {
