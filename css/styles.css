@@ -712,19 +712,17 @@ footer {
     
     .footer-content {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         text-align: center;
     }
     
     .footer-links {
-        gap: 6px;
-        max-width: 100%;
-        justify-content: center;
+        gap: 8px;
     }
     
     .footer-links a {
         font-size: 0.8rem;
-        padding: 2px 4px;
+        padding: 3px 5px;
     }
 }
 
@@ -744,21 +742,17 @@ footer {
     }
     
     .footer-content {
-        padding: 0 3px;
-        margin: 0;
+        padding: 0 5px;
     }
     
     .footer-links {
-        gap: 3px;
+        gap: 5px;
         width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
     }
     
     .footer-links a {
         font-size: 0.75rem;
-        padding: 2px;
-        margin: 0;
+        padding: 3px;
     }
     
     /* Fix pour éviter le défilement horizontal */
