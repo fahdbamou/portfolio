@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahd Bamou - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.35;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            zoom: 0.95;
+            -webkit-print-color-adjust: exact;
+            -moz-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        .cv-container {
+            max-width: 730px;
+            margin: 15px auto;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            position: relative;
+        }
+        
+        .header {
+            position: relative;
+            text-align: center;
+            border-bottom: 2px solid #04BBFF;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+        }
+        
+        .profile-photo {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            width: 100px;
+            height: 130px;
+            border-radius: 4px;
+            object-fit: contain;
+            background-color: white;
+            padding: 3px;
+            border: 0px solid #04BBFF;
+            z-index: 10;
+        }
+        
+        .header h1 {
+            color: #003C57;
+            margin-bottom: 2px;
+            font-size: 26px;
+        }
+        
+        .header h2 {
+            color: #0594D0;
+            font-weight: 500;
+            margin-top: 0;
+            font-size: 16px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        
+        .contact-info div {
+            margin: 0 10px;
+            font-size: 13px;
+        }
+        
+        .contact-info i {
+            color: #04BBFF;
+            margin-right: 5px;
+        }
+        
+        .section {
+            margin-bottom: 8px;
+        }
+        
+        .section-title {
+            color: #0594D0;
+            border-bottom: 1px solid #04BBFF;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .profile {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 4px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: 700;
+            color: #003C57;
+            margin: 0;
+        }
+        
+        .item-subtitle {
+            font-style: italic;
+            font-weight: normal;
+            color: #007198;
+            margin: 3px 0 4px;
+        }
+        
+        .item-date {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            row-gap: 2px;
+        }
+        
+
+        
+        .skill-category h4 {
+            color: #003C57;
+            margin-bottom: 2px;
+            font-size: 15px;
+        }
+        
+        .skill-category ul {
+            margin-top: 0;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+        
+        .skill-category li {
+            margin-bottom: 0;
+            font-size: 12.5px;
+            line-height: 1.35;
+        }
+        
+        .projects {
+            margin-bottom: 25px;
+        }
+        
+        .project-item {
+            margin-bottom: 3px;
+        }
+        
+        .project-item h4 {
+            color: #003C57;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+        
+        .project-item p {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        
+        .project-detail {
+            margin-bottom: 3px;
+        }
+        
+        .detail-label {
+            font-weight: 500;
+            color: #0594D0;
+            display: inline-block;
+            width: 55px;
+            margin-right: 3px;
+            vertical-align: top;
+            font-size: 12.5px;
+        }
+        
+        .detail-content {
+            display: inline-block;
+            font-size: 12.5px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                font-size: 11pt;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+            }
+            .profile-photo {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            /* Ensure no page breaks inside elements */
+            .experience-item, .education-item, .project-item {
+                page-break-inside: avoid;
+            }
+            /* Make sure background colors print */
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            /* Add space for header and footer and sides */
+            @page {
+                margin: 0.5cm 1.2cm;
+                size: A4;
+            }
+            .cv-container {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                max-width: 85% !important;
+                margin: 0 auto !important;
+                transform: scale(0.93);
+                transform-origin: top center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <img src="assets/me.png" alt="Fahd Bamou" class="profile-photo">
+        <div class="header" style="padding-right: 150px; margin-top: 15px;">
+            <h1>FAHD BAMOU</h1>
+            <h2>Business Intelligence Data Analyst</h2>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> Fahdbamou1@gmail.com</div>
+                <div><i class="fas fa-phone-alt"></i> (+212) 6 71 05 37 41</div>
+                <div><i class="fas fa-map-marker-alt"></i> Salé, Morocco</div>
+                <div><i class="fab fa-linkedin"></i> linkedin.com/in/fahd-bamou</div>
+            </div>
+        </div>
+        
+        <div class="profile">
+            <p style="font-size: 12.5px; margin-top: 5px; margin-bottom: 5px;">Skilled Data Analyst with 8 years experience transforming complex data into business insights. Engineering background with Python, SQL, and Power BI expertise. Delivers data-driven solutions that optimize operations and drive strategic growth.</p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">PROFESSIONAL EXPERIENCE</h3>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <h4 class="item-title">Senior Business Intelligence Analyst</h4>
+                    <span class="item-date">2019 - 2025</span>
+                </div>
+                <p class="item-subtitle">MAROSTACK | E-commerce Business</p>
+                <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                    <li>Analyzed consumer buying patterns and sales trends using Python to optimize pricing and inventory strategies.</li>
+                    <li>Designed SQL queries for detailed sales analysis, product performance tracking, and forecasting reports.</li>
+                    <li>Created interactive Power BI dashboards for real-time monitoring of sales, margins, and promotions.</li>
+                    <li>Identified customer behavior anomalies and proposed data-driven solutions to improve conversion rates.</li>
+                    <li>Collaborated with cross-functional teams to develop targeted analyses for profitability and customer experience improvements.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <h4 class="item-title">Junior Data Analyst</h4>
+                    <span class="item-date">2017 - 2019</span>
+                </div>
+                <p class="item-subtitle">MAROSTACK | E-commerce Business</p>
+                <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                    <li>Extracted and preprocessed data from multiple sources for analysis readiness.</li>
+                    <li>Performed exploratory data analysis to identify trends and patterns using Excel, SQL and Power BI.</li>
+                    <li>Created dashboards and reports to clearly communicate findings to stakeholders.</li>
+                    <li>Collaborated with business teams to align analyses with organizational goals.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <h4 class="item-title">Civil Engineer</h4>
+                    <span class="item-date">2012 - 2016</span>
+                </div>
+                <p class="item-subtitle">CIVILIA | Building & Public Works Project Coordination Office</p>
+                <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                    <li>Led technical teams in infrastructure development projects involving data-driven planning.</li>
+                    <li>Managed quantitative project analysis and created detailed progress reports for stakeholders.</li>
+                    <li>Developed specialized Excel tools for project time and cost analysis.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">EDUCATION</h3>  
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title">Engineer of Civil Engineering (BAC+5) with Distinction</h4>
+                    <span class="item-date">2007 - 2012</span>
+                </div>
+                <p class="item-subtitle">EMG - Ecole Marocaine d'inGenierie | Casablanca, Morocco</p>
+                <p class="item-subtitle">Specialization: Structural Engineering and Design Studies</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">CERTIFICATIONS</h3>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title" style="font-weight: normal; font-size: 13px;">Google Data Analyst Professional Certificate</h4>
+                    
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title" style="font-weight: normal; font-size: 13px;">Google Business Intelligence Professional Certificate</h4>
+                    
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title" style="font-weight: normal; font-size: 13px;">CertiProf BI Business Intelligence Certificate</h4>
+                    
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title" style="font-weight: normal; font-size: 13px;">CertiProf SCRUM Certificate</h4>
+                    
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <h4 class="item-title" style="font-weight: normal; font-size: 13px;">ÖSD Certificate (A1)</h4>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">TECHNICAL SKILLS</h3>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Data Analysis & Statistics</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>EDA, regression, correlation, hypothesis testing, time series analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>SQL</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Advanced queries, joins, CTEs, window functions, performance optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Python for Data</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Pandas, NumPy, Matplotlib, Seaborn, scikit-learn for analysis & automation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Power BI</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Advanced DAX, interactive dashboards, data modeling, Power Query (M)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>ETL Processes</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Data extraction, transformation, pipeline building using SQL or Python</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Data Warehousing</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>BigQuery</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cloud Platforms</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>GCP or AWS for data storage, analysis, and deployment</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>API Integration</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Automating data collection</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Data Visualization</h4>
+                    <ul style="margin-top: 2px; margin-bottom: 2px; font-size: 12.5px; padding-left: 20px; line-height: 1.35;">
+                        <li>Creating business dashboards, KPI reports, storytelling with data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">KEY PROJECTS</h3>
+            
+            <div class="project-item">
+                <h4>E-commerce Customer Segmentation & Personalization Engine</h4>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Tools:</div>
+                    <div class="detail-content">Python (Scikit-learn, Pandas), SQL, Power BI</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Problem:</div>
+                    <div class="detail-content">Generic marketing campaigns were leading to low conversion rates and customer engagement.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Solution:</div>
+                    <div class="detail-content">Developed machine learning models to segment customers by purchasing behavior and preferences, enabling personalized marketing campaigns.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Impact:</div>
+                    <div class="detail-content">Increased conversion rates by 32% and average order value by 17%.</div>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <h4>Enterprise Sales Performance Dashboard</h4>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Tools:</div>
+                    <div class="detail-content">Power BI, DAX, SQL, Power Query</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Problem:</div>
+                    <div class="detail-content">Fragmented data sources made it difficult to monitor sales performance and optimize inventory efficiently.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Solution:</div>
+                    <div class="detail-content">Created a comprehensive Power BI dashboard that integrated data from multiple sources to monitor KPIs, sales performance, and inventory optimization.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Impact:</div>
+                    <div class="detail-content">Reduced overstocking costs by 15% and improved sales forecast accuracy by 23%.</div>
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <h4>Supply Chain Optimization System</h4>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Tools:</div>
+                    <div class="detail-content">Python, SQL, ETL pipelines, Power BI</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Problem:</div>
+                    <div class="detail-content">Inefficiencies in the supply chain were causing delays and increased logistics costs.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Solution:</div>
+                    <div class="detail-content">Built an analytical pipeline to identify bottlenecks and inefficiencies in the supply chain, implementing data-driven recommendations.</div>
+                </div>
+                
+                <div class="project-detail">
+                    <div class="detail-label">Impact:</div>
+                    <div class="detail-content">Reduced lead times by 28% and logistics costs by 12%.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">LANGUAGES</h3>
+            <p style="font-size: 12.5px;">English (Fluent), French (Fluent), Arabic (Native), German (Beginner)</p>
+        </div>
+    </div>
+</body>
+</html>

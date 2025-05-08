@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Performance Dashboard - Fahd | Business Intelligence Data Analyst</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for project detail page */
+        .project-header {
+            background-color: var(--light-gray);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .project-header .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .project-header .tags span {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-overview {
+            padding: 60px 0;
+        }
+        
+        .project-image {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-section {
+            margin-bottom: 60px;
+        }
+        
+        .project-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .project-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .project-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .project-section li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .impact-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .impact-metric {
+            flex: 1;
+            min-width: 250px;
+            background-color: rgba(4, 187, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .impact-metric h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .impact-metric p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .back-to-projects {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 40px;
+            padding: 12px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-projects i {
+            transition: transform 0.3s ease;
+        }
+        
+        .back-to-projects:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .back-to-projects:hover i {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Fahd</div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1>Sales Performance Dashboard</h1>
+            <div class="tags">
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>Data Modeling</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="project-image">
+                <img src="../assets/project1.jpg" alt="Sales Performance Dashboard">
+            </div>
+
+            <!-- Problem Section -->
+            <div class="project-section">
+                <h2>The Problem</h2>
+                <p>A retail company was facing challenges in tracking and analyzing their sales performance across multiple regions and product lines. Their existing reporting system was:</p>
+                <ul>
+                    <li>Manual and time-consuming, requiring hours of data compilation each week</li>
+                    <li>Prone to errors due to the manual data entry processes</li>
+                    <li>Unable to provide real-time insights for decision-making</li>
+                    <li>Lacking in visual representation of trends and patterns</li>
+                </ul>
+                <p>The sales team needed a centralized solution that could automatically process sales data, visualize performance metrics, and enable data-driven decision making to improve their overall sales efficiency.</p>
+            </div>
+
+            <!-- Solution Section -->
+            <div class="project-section">
+                <h2>The Solution</h2>
+                <p>I developed a comprehensive, interactive Power BI dashboard that transformed how the company tracked and analyzed their sales data:</p>
+                <ul>
+                    <li>Created an automated ETL process using SQL to extract and transform data from multiple sources</li>
+                    <li>Designed a robust data model that linked sales, products, customers, and regional information</li>
+                    <li>Built interactive dashboard with key metrics for sales performance, customer segments, and product performance</li>
+                    <li>Implemented drill-down capabilities to analyze data from company level down to individual transactions</li>
+                    <li>Added time-based analysis features to track performance over different time periods</li>
+                    <li>Incorporated predictive trends to forecast future sales based on historical patterns</li>
+                </ul>
+                <p>The solution provided a single source of truth for sales data, allowing stakeholders at all levels to access relevant insights through an intuitive interface customized to their specific needs.</p>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="project-section">
+                <h2>The Impact</h2>
+                <p>The implementation of the Sales Performance Dashboard delivered significant measurable benefits to the organization:</p>
+
+                <div class="impact-metrics">
+                    <div class="impact-metric">
+                        <h3>15%</h3>
+                        <p>Increase in overall sales efficiency</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>8 hrs</h3>
+                        <p>Weekly time saved on report generation</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>12%</h3>
+                        <p>Improvement in inventory turnover</p>
+                    </div>
+                </div>
+
+                <p>Beyond the quantitative improvements, the dashboard also resulted in:</p>
+                <ul>
+                    <li>Enhanced decision-making with access to real-time data and insights</li>
+                    <li>Improved sales forecasting accuracy leading to better inventory management</li>
+                    <li>Identification of underperforming products and regions, enabling targeted improvement strategies</li>
+                    <li>Better understanding of customer buying patterns to create more effective marketing campaigns</li>
+                    <li>Creation of a data-driven culture within the sales organization</li>
+                </ul>
+            </div>
+
+            <a href="../projects.html" class="back-to-projects"><i class="fas fa-arrow-left"></i> Back to All Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Fahd</h3>
+                    <p>Business Intelligence Data Analyst</p>
+                    <p>Turning data into actionable insights</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Me</h4>
+                    <p><i class="fas fa-envelope"></i> Fahdbamou1@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+212) 6 71 05 37 41</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Düsseldorf, North Rhine-Westphalia</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/fahd-bamou/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fahd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

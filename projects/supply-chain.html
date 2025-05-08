@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Optimization - Fahd | Business Intelligence Data Analyst</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for project detail page */
+        .project-header {
+            background-color: var(--light-gray);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .project-header .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .project-header .tags span {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-overview {
+            padding: 60px 0;
+        }
+        
+        .project-image {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-section {
+            margin-bottom: 60px;
+        }
+        
+        .project-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .project-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .project-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .project-section li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .impact-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .impact-metric {
+            flex: 1;
+            min-width: 250px;
+            background-color: rgba(4, 187, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .impact-metric h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .impact-metric p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .back-to-projects {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 40px;
+            padding: 12px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-projects i {
+            transition: transform 0.3s ease;
+        }
+        
+        .back-to-projects:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .back-to-projects:hover i {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Fahd</div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1>Supply Chain Optimization</h1>
+            <div class="tags">
+                <span>SQL</span>
+                <span>Python</span>
+                <span>Power BI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="project-image">
+                <img src="../assets/project3.jpg" alt="Supply Chain Optimization">
+            </div>
+
+            <!-- Problem Section -->
+            <div class="project-section">
+                <h2>The Problem</h2>
+                <p>A global manufacturing company was struggling with inefficiencies in their supply chain that were directly impacting their bottom line. They faced several critical challenges:</p>
+                <ul>
+                    <li>Excessive inventory levels at some locations, while experiencing stockouts at others</li>
+                    <li>Poor visibility into inventory movement across their network of warehouses and distribution centers</li>
+                    <li>Inconsistent data across multiple disconnected systems, making it difficult to track inventory accurately</li>
+                    <li>Rising logistics costs due to unoptimized transportation routes and emergency shipping needs</li>
+                    <li>Inability to predict demand patterns, leading to overproduction or underproduction</li>
+                    <li>No systematic way to identify bottlenecks in the supply chain process</li>
+                </ul>
+                <p>The company needed a comprehensive solution that would provide end-to-end visibility of their supply chain, optimize inventory levels, and reduce logistics costs while ensuring product availability to meet customer demand.</p>
+            </div>
+
+            <!-- Solution Section -->
+            <div class="project-section">
+                <h2>The Solution</h2>
+                <p>I developed an integrated ETL pipeline and analytics dashboard solution to address the supply chain challenges:</p>
+                <ul>
+                    <li>Created an ETL pipeline using Python and SQL to consolidate and clean data from multiple sources including ERP systems, warehouse management systems, and transportation management systems</li>
+                    <li>Implemented data quality checks to identify and correct inconsistencies in inventory data across different systems</li>
+                    <li>Developed a real-time inventory tracking system that provided visibility across all locations</li>
+                    <li>Built a Power BI dashboard with role-based views for different stakeholders, from executives to warehouse managers</li>
+                    <li>Created predictive models for demand forecasting using time series analysis and machine learning algorithms</li>
+                    <li>Integrated logistics data to optimize transportation routes and shipping schedules</li>
+                    <li>Implemented inventory optimization models to determine optimal safety stock levels based on demand variability and lead times</li>
+                    <li>Developed automated alerts for potential stockouts or excess inventory situations</li>
+                </ul>
+                <p>The solution provided a unified view of the entire supply chain with actionable insights for decision-makers at all levels of the organization.</p>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="project-section">
+                <h2>The Impact</h2>
+                <p>The supply chain optimization solution delivered significant measurable improvements across multiple areas:</p>
+
+                <div class="impact-metrics">
+                    <div class="impact-metric">
+                        <h3>12%</h3>
+                        <p>Annual cost savings in logistics and inventory</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>22%</h3>
+                        <p>Reduction in average inventory levels</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>35%</h3>
+                        <p>Decrease in stockout incidents</p>
+                    </div>
+                </div>
+
+                <p>Beyond these quantitative improvements, the project also delivered several strategic benefits:</p>
+                <ul>
+                    <li>Improved decision-making with real-time visibility into the entire supply chain</li>
+                    <li>Enhanced ability to respond to market changes with more accurate demand forecasting</li>
+                    <li>Reduced lead times for order fulfillment, improving customer satisfaction</li>
+                    <li>Optimized working capital through better inventory management</li>
+                    <li>Identified and eliminated bottlenecks in the supply chain process</li>
+                    <li>Created a foundation for continuous improvement through data-driven insights</li>
+                    <li>Enabled more accurate planning for resource allocation and capacity management</li>
+                </ul>
+                <p>The supply chain optimization solution has become a critical strategic asset for the company, supporting their goals for operational efficiency and customer satisfaction while significantly reducing costs.</p>
+            </div>
+
+            <a href="../projects.html" class="back-to-projects"><i class="fas fa-arrow-left"></i> Back to All Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Fahd</h3>
+                    <p>Business Intelligence Data Analyst</p>
+                    <p>Turning data into actionable insights</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Me</h4>
+                    <p><i class="fas fa-envelope"></i> Fahdbamou1@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+212) 6 71 05 37 41</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Düsseldorf, North Rhine-Westphalia</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/fahd-bamou/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fahd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

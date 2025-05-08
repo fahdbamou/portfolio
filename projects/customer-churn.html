@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction - Fahd | Business Intelligence Data Analyst</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for project detail page */
+        .project-header {
+            background-color: var(--light-gray);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .project-header .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .project-header .tags span {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-overview {
+            padding: 60px 0;
+        }
+        
+        .project-image {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-section {
+            margin-bottom: 60px;
+        }
+        
+        .project-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .project-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .project-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .project-section li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .impact-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .impact-metric {
+            flex: 1;
+            min-width: 250px;
+            background-color: rgba(4, 187, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .impact-metric h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .impact-metric p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .back-to-projects {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 40px;
+            padding: 12px 24px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-projects i {
+            transition: transform 0.3s ease;
+        }
+        
+        .back-to-projects:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .back-to-projects:hover i {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Fahd</div>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1>Customer Churn Prediction</h1>
+            <div class="tags">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="project-image">
+                <img src="../assets/project2.jpg" alt="Customer Churn Prediction">
+            </div>
+
+            <!-- Problem Section -->
+            <div class="project-section">
+                <h2>The Problem</h2>
+                <p>A telecommunications company was experiencing a significant increase in customer churn rate, leading to substantial revenue loss. The company faced several challenges:</p>
+                <ul>
+                    <li>No systematic way to identify customers at risk of churning before they actually left</li>
+                    <li>Reactive rather than proactive approach to customer retention</li>
+                    <li>Inefficient allocation of retention resources across the customer base</li>
+                    <li>Limited understanding of the key factors driving customer churn</li>
+                    <li>Difficulty quantifying the impact of different service features on customer loyalty</li>
+                </ul>
+                <p>The company needed a solution that could accurately predict which customers were likely to churn, allowing them to implement targeted retention strategies before customers decided to leave.</p>
+            </div>
+
+            <!-- Solution Section -->
+            <div class="project-section">
+                <h2>The Solution</h2>
+                <p>I developed a machine learning model to predict customer churn using Python and various data science libraries:</p>
+                <ul>
+                    <li>Collected and integrated customer data from multiple sources including transaction history, service usage, customer support interactions, and demographic information</li>
+                    <li>Performed extensive exploratory data analysis to identify patterns and correlations between various factors and churn behavior</li>
+                    <li>Applied data preprocessing techniques including handling missing values, feature engineering, and normalization</li>
+                    <li>Trained and evaluated multiple machine learning models including Logistic Regression, Random Forest, and Gradient Boosting</li>
+                    <li>Used feature importance analysis to identify the key factors contributing to customer churn</li>
+                    <li>Implemented a probability-based scoring system to rank customers by their likelihood to churn</li>
+                    <li>Developed an interactive dashboard for business users to visualize churn predictions and insights</li>
+                </ul>
+                <p>The final solution included a pipeline for regular model retraining as new data became available, ensuring that the predictions remained accurate over time.</p>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="project-section">
+                <h2>The Impact</h2>
+                <p>The customer churn prediction model delivered significant value to the company across multiple dimensions:</p>
+
+                <div class="impact-metrics">
+                    <div class="impact-metric">
+                        <h3>87%</h3>
+                        <p>Prediction accuracy in identifying at-risk customers</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>23%</h3>
+                        <p>Reduction in customer churn rate</p>
+                    </div>
+                    <div class="impact-metric">
+                        <h3>$1.2M</h3>
+                        <p>Annual revenue saved through retention</p>
+                    </div>
+                </div>
+
+                <p>Beyond the quantitative metrics, the project also delivered other valuable benefits:</p>
+                <ul>
+                    <li>Enabled the company to shift from reactive to proactive customer retention strategies</li>
+                    <li>Provided insights into the primary drivers of churn, leading to improvements in service quality</li>
+                    <li>Allowed for more efficient allocation of retention resources by focusing on high-risk, high-value customers</li>
+                    <li>Created a feedback loop for continual improvement of service offerings based on customer preferences</li>
+                    <li>Enhanced the company's data culture by demonstrating the tangible benefits of predictive analytics</li>
+                </ul>
+                <p>The model continues to evolve and improve as more data becomes available, making it an increasingly valuable asset for the company's customer retention efforts.</p>
+            </div>
+
+            <a href="../projects.html" class="back-to-projects"><i class="fas fa-arrow-left"></i> Back to All Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Fahd</h3>
+                    <p>Business Intelligence Data Analyst</p>
+                    <p>Turning data into actionable insights</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Me</h4>
+                    <p><i class="fas fa-envelope"></i> Fahdbamou1@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+212) 6 71 05 37 41</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Düsseldorf, North Rhine-Westphalia</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/fahd-bamou/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fahd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
