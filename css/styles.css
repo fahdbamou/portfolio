@@ -568,11 +568,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: calc(100% - 6px);
+    max-width: 100%;
     box-sizing: border-box;
-    padding: 0 12px;
+    padding: 0 15px;
     margin: 0 auto;
-    width: calc(100% - 6px);
+    width: 100%;
 }
 
 .footer-links {
@@ -712,25 +712,19 @@ footer {
     
     .footer-content {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         text-align: center;
     }
     
     .footer-links {
-        gap: 1px;
-        flex-wrap: wrap;
+        gap: 6px;
+        max-width: 100%;
         justify-content: center;
-        max-width: calc(100% - 6px);
-        padding: 0;
-        width: calc(100% - 6px);
     }
     
     .footer-links a {
-        font-size: 0.75rem;
-        padding: 1px 2px;
-        word-break: keep-all;
-        white-space: nowrap;
-        margin: 0;
+        font-size: 0.8rem;
+        padding: 2px 4px;
     }
 }
 
@@ -750,25 +744,21 @@ footer {
     }
     
     .footer-content {
-        padding: 0;
-        max-width: calc(100% - 6px);
-        width: calc(100% - 6px);
-        margin: 0 auto;
+        padding: 0 3px;
+        margin: 0;
     }
     
     .footer-links {
-        gap: 1px;
+        gap: 3px;
         width: 100%;
         flex-wrap: wrap;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        justify-items: center;
+        justify-content: center;
     }
     
     .footer-links a {
         font-size: 0.75rem;
-        padding: 3px;
+        padding: 2px;
+        margin: 0;
     }
     
     /* Fix pour éviter le défilement horizontal */
